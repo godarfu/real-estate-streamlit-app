@@ -9,7 +9,8 @@ st.title("🏠 Real Estate Investment Advisor")
 # Load data
 @st.cache_data
 def load_data():
-    return pd.read_csv("india_housing_prices.csv")
+    return pd.read_csv("india_housing_prices_small.csv")
+
 
 df = load_data()
 st.success("Dataset loaded successfully")
